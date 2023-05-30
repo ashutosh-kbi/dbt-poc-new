@@ -1,0 +1,14 @@
+dbtgluepoc:
+  target: dev
+  outputs:
+    dev:
+      type: glue
+      query-comment: demo-spark-sql
+      role_arn: "arn:aws:iam::334822733362:role/GlueInteractiveSessionRole"
+      region: us-west-1
+      workers: 5
+      worker_type: G.1X
+      schema: "poc_curated_dbt"
+      database: "poc_curated_dbt"
+      session_provisioning_timeout_in_seconds: 120
+      location: "s3://poc-curated-legislator-dbt/"

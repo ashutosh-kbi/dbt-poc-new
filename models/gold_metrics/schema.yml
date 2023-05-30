@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: spark_sql_test
+    description: This table has organization details
+
+    columns:
+      - name: name
+        description: name
+
+      - name: classification
+        description: classification
+        
